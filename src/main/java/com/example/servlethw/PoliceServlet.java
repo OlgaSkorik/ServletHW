@@ -1,15 +1,16 @@
 package com.example.servlethw;
 
 import com.example.servlethw.model.Employee;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.*;
-import java.lang.reflect.InvocationTargetException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
 
 @WebServlet(name = "policeServlet", value = "/police")
 public class PoliceServlet extends HttpServlet {
