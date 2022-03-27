@@ -65,6 +65,7 @@ public class PoliceServlet extends HttpServlet {
     }
 
     public void destroy() {
+        employeeList.clear();
         try {
             preparedStatement.close();
             connection.close();
