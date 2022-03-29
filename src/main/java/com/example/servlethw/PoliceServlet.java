@@ -28,6 +28,7 @@ public class PoliceServlet extends HttpServlet {
         employeeList.add(new Employee(3, "Denis", 26, "state autoinspection", 1900));
         employeeList.add(new Employee(4, "Marta", 31, "execution of punishments", 2350));
         employeeList.add(new Employee(5, "Boris", 40, "protection of state secrets", 5000));
+        employeeList.add(new Employee(6, "Vadim", 62, "criminal investigations", 12000));
 
         employeeList.forEach(myEmployee -> {
             try {
